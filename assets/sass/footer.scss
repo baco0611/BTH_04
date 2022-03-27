@@ -1,0 +1,58 @@
+.footer{
+    &-top{
+        width: 100%;
+        height: 300px;
+        background-color: $gray-color;
+        padding-top: 70px;
+        & .wraper{
+            display: flex;
+            gap: 50px;
+            & h1{
+                font-weight: 400;
+                text-transform: uppercase;
+                font-size: 1.6em;
+                padding-bottom: 40px;
+            }
+            & p{
+                font-size: 0.98em;
+                font-weight: 300;
+                line-height: 1.3;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    &-bottom{
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        & p{
+            line-height: 40px;
+            font-weight: 300;
+            font-size: 1em;
+        }
+    }
+    &-left{
+        width: 620px;
+    }
+    &-right{
+        width: 400px;
+    }
+    &-icon{
+        display: flex;
+        gap: 10px;
+        & a{
+            display: block;
+            width: 38px;
+            height: 38px;
+            background-color: rgb(255, 255, 255, 0.05);
+            border: 1px solid rgb(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            & i{
+                color: white;
+                margin: 0 auto;
+                font-size: 1em;
+            }
+        }
+    }
+}

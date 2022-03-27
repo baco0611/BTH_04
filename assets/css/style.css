@@ -1,0 +1,385 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+input, textarea, section, button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding-top: 45px;
+}
+
+.wraper {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 120px;
+  display: flex;
+  gap: 10px;
+}
+.header-img {
+  width: 100px;
+  height: 100%;
+}
+.header-img img {
+  width: 100%;
+  height: 100%;
+}
+.header-top {
+  width: 960px;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top a {
+  color: black;
+}
+.header-bottom {
+  width: 960px;
+  height: 50%;
+  background-color: #f69631;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bottom a {
+  color: white;
+}
+.header-menu ul {
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 60px;
+  list-style: none;
+}
+.header-search input {
+  width: 250px;
+  height: 35px;
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+}
+.header-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 35px;
+}
+.header-icon-item {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.header-icon-item i {
+  margin: 0 auto;
+  color: #f69631;
+}
+
+#banner-section img {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.hot {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  color: white;
+}
+.hot-full {
+  position: relative;
+  height: 465px;
+  grid-row: 1/3;
+  grid-column: 1/3;
+  background-clip: content-box;
+  padding: 1px;
+  background-size: cover;
+  background-image: url(../images/msi-2019.jpg);
+}
+.hot-full a {
+  display: block;
+  color: white;
+  width: 85%;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+.hot-full p {
+  width: 85%;
+  font-size: 0.9em;
+  font-weight: 300;
+  padding: 15px 0;
+  padding-left: 20px;
+}
+.hot-half {
+  position: relative;
+  height: 265px;
+  grid-column: 3/5;
+  background-clip: content-box;
+  padding: 1px;
+  background-size: cover;
+  background-image: url(../images/msi-2019-players.jpg);
+}
+.hot-half a {
+  display: block;
+  color: white;
+  width: 85%;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 700;
+  padding: 15px 0;
+  padding-left: 20px;
+}
+.hot-quater {
+  position: relative;
+  height: 200px;
+  background-clip: content-box;
+  padding: 1px;
+  background-size: cover;
+}
+.hot-quater a {
+  display: block;
+  color: white;
+  width: 95%;
+  font-size: 1em;
+  line-height: 1.3em;
+  font-weight: 700;
+  padding: 10px 0;
+  padding-left: 20px;
+}
+.hot-quater-1 {
+  background-image: url(../images/levi-jdk.jpg);
+}
+.hot-quater-2 {
+  background-image: url(../images/kieu-anh-hera.jpg);
+}
+.hot-content {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: calc(100% - 2px);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.main {
+  padding: 0 5px;
+  display: flex;
+  gap: 65px;
+  height: 755px;
+}
+.main h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #f69631;
+  padding-bottom: 15px;
+}
+.main-left {
+  width: 685px;
+  height: 100%;
+}
+.main-left .line {
+  position: relative;
+  background-color: #ccc;
+  width: 90px;
+  height: 1px;
+}
+.main-left .line .subline {
+  position: absolute;
+  background-color: #f69631;
+  width: 50px;
+  height: 1px;
+}
+.main-left-item {
+  margin-top: 28.75px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-left-item .img {
+  width: 225px;
+  height: 100%;
+}
+.main-left-item .img img {
+  width: 100%;
+  height: 100%;
+}
+.main-left-item .content {
+  width: 430px;
+  height: 100%;
+  padding-top: 5px;
+}
+.main-left-item .content a {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+  color: black;
+}
+.main-left-item .content p {
+  color: #aaaaaa;
+  font-size: 0.8em;
+  padding: 10px 0;
+  font-weight: 300;
+}
+.main-left-item .content h3 {
+  color: #777777;
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+.main-right {
+  width: 310px;
+  height: 100%;
+}
+.main-right .line {
+  position: relative;
+  background-color: #ccc;
+  width: 100%;
+  height: 1px;
+}
+.main-right .line .subline {
+  position: absolute;
+  background-color: #f69631;
+  width: 50px;
+  height: 1px;
+}
+.main-right .content-top {
+  width: 100%;
+  height: 343px;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.main-right .content-top a {
+  display: block;
+  color: black;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+.main-right .content img {
+  width: 300px;
+  height: 372px;
+  margin: 0 auto;
+}
+
+.more {
+  height: 190px;
+  display: flex;
+  align-items: center;
+}
+.more a {
+  border: #aaaaaa 1px solid;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #777777;
+}
+
+.footer-top {
+  width: 100%;
+  height: 300px;
+  background-color: #383838;
+  padding-top: 70px;
+}
+.footer-top .wraper {
+  display: flex;
+  gap: 50px;
+}
+.footer-top .wraper h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  padding-bottom: 40px;
+}
+.footer-top .wraper p {
+  font-size: 0.98em;
+  font-weight: 300;
+  line-height: 1.3;
+  padding-bottom: 30px;
+}
+.footer-bottom {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+.footer-bottom p {
+  line-height: 40px;
+  font-weight: 300;
+  font-size: 1em;
+}
+.footer-left {
+  width: 620px;
+}
+.footer-right {
+  width: 400px;
+}
+.footer-icon {
+  display: flex;
+  gap: 10px;
+}
+.footer-icon a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+}
+.footer-icon a i {
+  color: white;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+.more{
+    height: 190px;
+    display: flex;
+    align-items: center;
+    & a{
+        border: $gray-light 1px solid;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+        font-size: 1em;
+        color: $gray-dark;
+    }
+}
